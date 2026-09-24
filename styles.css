@@ -30,9 +30,9 @@
   --accent:var(--terracotta);
   --on-accent:var(--ink);
 
-  --radius-lg:26px;
-  --radius-md:18px;
-  --radius-sm:12px;
+  --radius-lg:12px;
+  --radius-md:8px;
+  --radius-sm:6px;
   --shadow:0 22px 45px -24px rgba(9,47,51,.34);
   --shadow-soft:0 10px 30px -18px rgba(9,47,51,.28);
 
@@ -336,6 +336,32 @@ a:hover{text-decoration-color:var(--blossom)}
 /* ---------- footer ---------- */
 .foot{padding-block:1.6rem;color:var(--ink-soft-light);font-size:var(--step--1)}
 .foot .wrap{display:flex;flex-wrap:wrap;gap:.5rem 1.4rem;justify-content:space-between}
+
+/* ---------- refinement: quieter, more professional finish (same colours) ---------- */
+.hero__eyebrow,.detail__eyebrow{
+  font-family:var(--font-body);font-style:normal;font-weight:600;
+  font-size:var(--step--1);letter-spacing:.18em;text-transform:uppercase;margin-bottom:1rem;
+}
+.hero__degree{font-weight:500;letter-spacing:.04em}
+.detail__meta h3{
+  font-family:var(--font-body);font-style:normal;font-weight:600;
+  font-size:var(--step--1);letter-spacing:.16em;text-transform:uppercase;
+}
+.lead-list dt{font-style:normal;font-weight:600}
+.grid > li,.card,.shot{background-image:none}
+.card{box-shadow:0 2px 10px -6px rgba(9,47,51,.4)}
+.card:hover,.card:focus-visible{transform:translateY(-2px);box-shadow:0 10px 22px -14px rgba(9,47,51,.5)}
+.shot{box-shadow:none}
+.hero__portrait img{box-shadow:0 12px 30px -20px rgba(0,0,0,.6)}
+.btn{border-radius:6px;padding:.75rem 1.5rem;letter-spacing:.02em}
+.pill{
+  border-radius:4px;background:var(--paper-2);
+  -webkit-backdrop-filter:none;backdrop-filter:none;
+  letter-spacing:.03em;padding:.35rem .75rem;
+}
+.detail__chip{border-radius:4px}
+.detail__result{border-left-width:3px}
+body.js [data-reveal]{transform:translateY(10px)}
 
 /* ---------- reveal (progressive enhancement — only hides once JS runs) ---------- */
 body.js [data-reveal]{opacity:0;transform:translateY(16px);transition:opacity .6s ease,transform .6s ease}
