@@ -144,7 +144,7 @@ a:hover{text-decoration-color:var(--accent-fg)}
   font-size:var(--step--1);letter-spacing:.08em;text-transform:uppercase;
   color:var(--fg-soft);
 }
-.hero__meta li:not(:last-child)::after{content:"\00b7";margin:0 .65em;color:var(--accent2-fg)}
+.hero__meta li:not(:last-child)::after{content:"\00b7";margin:0 .65em;color:var(--terracotta)}
 
 .hero__contact-text a{white-space:nowrap}
 @media(max-width:600px){
@@ -236,10 +236,10 @@ a:hover{text-decoration-color:var(--accent-fg)}
 .contact__links{display:flex;flex-wrap:wrap;gap:.8rem}
 .hero__contact-text{margin-top:.9rem;font-size:var(--step--1);color:var(--fg-soft);letter-spacing:.02em}
 .hero__contact-text a{color:var(--fg);text-underline-offset:3px}
-.hero__contact-text span{margin:0 .5em;color:var(--accent2-fg)}
+.hero__contact-text span{margin:0 .5em;color:var(--terracotta)}
 .btn{
   display:inline-block;padding:.8rem 1.4rem;border-radius:999px;font-weight:500;text-decoration:none;
-  background:var(--skyblue);color:var(--ink);border:1px solid var(--skyblue);
+  background:var(--terracotta);color:#FFFFFF;border:1px solid var(--terracotta);
 }
 .btn:hover{background:transparent;color:var(--fg);border-color:var(--fg);text-decoration:none}
 .btn--ghost{background:transparent;color:var(--fg);border-color:var(--fg-line)}
@@ -372,7 +372,7 @@ body.js [data-reveal]{transform:translateY(10px)}
 }
 html.theme-dark{
   --bg:#2A1810;--fg:#F5ECDD;--fg-soft:#C7AF97;--fg-line:rgba(245,236,221,.5);
-  --accent-fg:#FDABA5;--accent2-fg:#7FC7CC;--link-fg:#EA8913;
+  --accent-fg:#FDABA5;--accent2-fg:#C0775C;--link-fg:#EA8913;
   --nav-bg:rgba(23,14,9,.88);--nav-line:rgba(199,175,151,.22);
 }
 html,body::before,body *,body *::before,body *::after{
@@ -383,7 +383,7 @@ html,body::before,body *,body *::before,body *::after{
 /* thin scroll-progress line under the nav */
 .topbar::after{
   content:"";position:absolute;left:0;right:0;bottom:-1px;height:2px;
-  background:var(--accent2-fg);transform:scaleX(var(--p,0));transform-origin:0 50%;
+  background:var(--terracotta);transform:scaleX(var(--p,0));transform-origin:0 50%;
   transition:background-color var(--t);pointer-events:none;
 }
 
