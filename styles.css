@@ -30,9 +30,9 @@
   --accent:var(--terracotta);
   --on-accent:var(--ink);
 
-  --radius-lg:12px;
-  --radius-md:8px;
-  --radius-sm:6px;
+  --radius-lg:26px;
+  --radius-md:18px;
+  --radius-sm:12px;
   --shadow:0 22px 45px -24px rgba(9,47,51,.34);
   --shadow-soft:0 10px 30px -18px rgba(9,47,51,.28);
 
@@ -353,13 +353,12 @@ a:hover{text-decoration-color:var(--blossom)}
 .card:hover,.card:focus-visible{transform:translateY(-2px);box-shadow:0 10px 22px -14px rgba(9,47,51,.5)}
 .shot{box-shadow:none}
 .hero__portrait img{box-shadow:0 12px 30px -20px rgba(0,0,0,.6)}
-.btn{border-radius:6px;padding:.75rem 1.5rem;letter-spacing:.02em}
+.btn{padding:.75rem 1.5rem;letter-spacing:.02em}
 .pill{
-  border-radius:4px;background:var(--paper-2);
+  background:var(--paper-2);
   -webkit-backdrop-filter:none;backdrop-filter:none;
   letter-spacing:.03em;padding:.35rem .75rem;
 }
-.detail__chip{border-radius:4px}
 .detail__result{border-left-width:3px}
 body.js [data-reveal]{transform:translateY(10px)}
 
