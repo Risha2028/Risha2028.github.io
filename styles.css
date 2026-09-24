@@ -362,6 +362,29 @@ a:hover{text-decoration-color:var(--blossom)}
 .detail__result{border-left-width:3px}
 body.js [data-reveal]{transform:translateY(10px)}
 
+/* ---------- light theme trial: cream top bar, hero, "Selected work" banner and footer ---------- */
+:root{--cream:#FAF3E4;--cream-ink:#2A1810;--cream-soft:#6B4F3D}
+.topbar{background:rgba(250,243,228,.94);border-bottom:1px solid rgba(42,24,16,.12)}
+.brand{color:var(--cream-ink)}
+.brand__avatar{border-color:rgba(42,24,16,.3)}
+.nav a{color:var(--cream-soft)}
+.nav a:hover{color:var(--cream-ink)}
+.hero{background:var(--cream)}
+.hero__eyebrow,.hero__degree{color:var(--terracotta)}
+.hero__name{color:var(--cream-ink)}
+.hero .hero__lede,.hero .hero__meta,.hero .hero__contact-text{color:var(--cream-soft)}
+.hero .hero__contact-text a{color:var(--cream-ink)}
+.hero .btn:hover{background:var(--cream-ink);color:var(--cream);border-color:var(--cream-ink)}
+.hero .btn--ghost{color:var(--cream-ink);border-color:rgba(42,24,16,.45)}
+.hero .btn--ghost:hover{background:var(--cream-ink);color:var(--cream);border-color:var(--cream-ink)}
+.section--work{background:var(--cream)}
+.section--work .work-title{color:var(--cream-ink)}
+.grid > li{background-color:color-mix(in srgb,var(--accent) 87%,#2A1810)}
+.foot{background:var(--cream);color:var(--cream-soft)}
+#about{background:var(--cream)}
+#about .section-title{color:var(--cream-ink)}
+#about .about__text{color:var(--cream-soft)}
+
 /* ---------- reveal (progressive enhancement — only hides once JS runs) ---------- */
 body.js [data-reveal]{opacity:0;transform:translateY(16px);transition:opacity .6s ease,transform .6s ease}
 body.js [data-reveal].in{opacity:1;transform:none}
