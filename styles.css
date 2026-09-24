@@ -146,6 +146,17 @@ a:hover{text-decoration-color:var(--blossom)}
 }
 .hero__meta li:not(:last-child)::after{content:"\00b7";margin:0 .65em;color:var(--sunshine)}
 
+.hero__contact-text a{white-space:nowrap}
+@media(max-width:600px){
+  .hero__meta{flex-direction:column}
+  .hero__meta li:not(:last-child)::after{content:none}
+  .hero__contact-text{display:flex;flex-direction:column;gap:.35rem}
+  .hero__contact-text span{display:none}
+  .brand{white-space:nowrap;font-size:1rem;gap:.5rem}
+  .nav{gap:.75rem}
+  .nav a{letter-spacing:.08em}
+}
+
 .pill{
   display:inline-block;font-size:var(--step--1);letter-spacing:.06em;
   padding:.4rem .85rem;border-radius:999px;background:rgba(255,253,246,.74);
