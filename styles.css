@@ -124,7 +124,7 @@ a:hover{text-decoration-color:var(--blossom)}
   margin-top:clamp(1.6rem,3.5vw,2.2rem);
   display:grid;gap:clamp(1.6rem,4vw,2.8rem);align-items:center;
 }
-@media(min-width:820px){.hero__row{grid-template-columns:1fr auto}}
+@media(min-width:820px){.hero__row{grid-template-columns:1fr auto;align-items:end}}
 .hero__lede{font-size:var(--step-1);color:var(--ink-soft-light);line-height:1.6;max-width:38ch}
 
 /* headshot: a proper portrait crop, sized to its own content (not stretched
@@ -139,7 +139,7 @@ a:hover{text-decoration-color:var(--blossom)}
 
 /* skills: plain labels, no chip background — separated by a small accent dot */
 .hero__meta{
-  margin:1.8rem 0 0;padding:0;list-style:none;
+  margin:1.2rem 0 0;padding:0;list-style:none;
   display:flex;flex-wrap:wrap;row-gap:.4rem;
   font-size:var(--step--1);letter-spacing:.08em;text-transform:uppercase;
   color:var(--ink-soft-light);
@@ -221,7 +221,7 @@ a:hover{text-decoration-color:var(--blossom)}
 .about__text{max-width:54ch;font-size:var(--step-1);color:var(--ink-soft-light);line-height:1.6}
 
 /* ---------- contact ---------- */
-.hero__contact{margin-top:2rem}
+.hero__contact{margin-top:1.2rem}
 .contact__links{display:flex;flex-wrap:wrap;gap:.8rem}
 .hero__contact-text{margin-top:.9rem;font-size:var(--step--1);color:var(--ink-soft-light);letter-spacing:.02em}
 .hero__contact-text a{color:var(--ink-light);text-underline-offset:3px}
