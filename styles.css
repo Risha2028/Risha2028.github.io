@@ -166,7 +166,7 @@ a:hover{text-decoration-color:var(--accent-fg)}
 
 /* ---------- section scaffolding ---------- */
 .section{padding-block:clamp(3rem,8vw,6rem)}
-.section-title{font-size:var(--step-3);letter-spacing:-.01em;margin-bottom:clamp(1.4rem,3vw,2.2rem);color:var(--fg)}
+.section-title{font-size:clamp(1.6rem,1.3rem + 1.3vw,2.3rem);letter-spacing:.05em;text-transform:uppercase;margin-bottom:clamp(1.4rem,3vw,2.2rem);color:var(--fg)}
 /* "Selected work" sits directly on top of the first colour block */
 .section--work{padding-block:clamp(1.6rem,4vw,3rem) 0}
 .work-title{margin-bottom:clamp(1.6rem,3.5vw,2.4rem)}
