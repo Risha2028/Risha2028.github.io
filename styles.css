@@ -168,8 +168,8 @@ a:hover{text-decoration-color:var(--blossom)}
 .section{padding-block:clamp(3rem,8vw,6rem)}
 .section-title{font-size:var(--step-3);letter-spacing:-.01em;margin-bottom:clamp(1.4rem,3vw,2.2rem);color:var(--ink-light)}
 /* "Selected work" sits directly on top of the first colour block */
-.section--work{padding-block:clamp(2.4rem,6vw,4.5rem) 0}
-.work-title{margin-bottom:.8rem}
+.section--work{padding-block:clamp(1.6rem,4vw,3rem) 0}
+.work-title{margin-bottom:clamp(1.6rem,3.5vw,2.4rem)}
 
 /* ---------- work grid: full-bleed colour band, white cards floating on it ---------- */
 .grid{
