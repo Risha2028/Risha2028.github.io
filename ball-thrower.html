@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Autonomous Dog Ball Thrower · Risha Suvarna</title>
+<meta name="description" content="An IoT ball launcher that reads a dog's energy and adapts each throw, with a live analytics dashboard. Team project, ME 100, UC Berkeley.">
+<meta name="theme-color" content="#2A1810">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='9' fill='%232A1810'/%3E%3Cpath d='M6 21c6 0 4-11 10-11s4 11 10 11' fill='none' stroke='%23EA8913' stroke-width='3' stroke-linecap='round'/%3E%3Ccircle cx='16' cy='10' r='2.4' fill='%23FDABA5'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body data-accent="terracotta">
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="topbar">
+  <div class="wrap">
+    <a class="brand" href="index.html"><img class="brand__avatar" src="headshot%20risha.jpeg" alt="" width="34" height="34"> Risha Suvarna</a>
+    <nav class="nav" aria-label="Primary">
+      <a href="index.html#work">Work</a>
+      <a href="index.html#about">About</a>
+      <a href="index.html#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main class="detail" id="main" aria-labelledby="d-title">
+  <div class="wrap">
+    <a class="back" href="index.html#work">All projects</a>
+
+    <p class="detail__eyebrow">Team project &middot; ME&nbsp;100 &middot; Jan 2026 &ndash; Jun 2026</p>
+    <h1 class="detail__title" id="d-title">Autonomous Dog <span class="mark mark--tall">Ball Thrower</span></h1>
+    <p class="detail__result">100+&nbsp;m of adaptive throws per session, with closed-loop fatigue detection, tested on a real dog.</p>
+
+    <div class="detail__media" data-reveal>
+      <figure class="shot shot--bleed">
+        <img src="dog-ball-thrower1.png" alt="The red 3D-printed launcher with exposed breadboard and wiring, a tennis ball in the chute and a hinged catch tray, beside a laptop running the dashboard." loading="lazy">
+        <figcaption>The working prototype: launcher, catch tray, and the live dashboard mid-session.</figcaption>
+      </figure>
+    </div>
+
+    <div class="prose" data-reveal>
+      <h2>The problem</h2>
+      <p>Off-the-shelf ball launchers throw one fixed distance. They can&rsquo;t be adjusted from across the yard, they have no sense of whether a dog is fresh or worn out, and they give owners nothing to look back on afterward.</p>
+
+      <h2>What we built</h2>
+      <p>An IoT launcher that reads how quickly a dog returns the ball and adapts the next throw, while streaming every session to a dashboard an owner can open from anywhere.</p>
+      <dl class="lead-list">
+        <div><dt>Sense</dt><dd>An RCWL-1601 ultrasonic sensor times the ball&rsquo;s round trip. Return time stands in for how much energy the dog has left.</dd></div>
+        <div><dt>Decide</dt><dd>An ESP32 running MicroPython sets motor PWM from a rolling average of return times. Distance climbs while the dog is quick and eases back as it tires.</dd></div>
+        <div><dt>Act</dt><dd>Variable-distance launch, with the flywheel motor driven through a BJT + MOSFET stage with a flyback diode. Throw data flows over MQTT into Supabase and a Next.js dashboard: per-session stats, throw-by-throw charts, weekly trends, mood tags, and AI session summaries.</dd></div>
+      </dl>
+
+      <h2>The hard parts</h2>
+      <ul>
+        <li>Tolerancing the launch-and-grip mechanism across several print iterations to get reliable grip and release</li>
+        <li>Tracing erratic start-up behaviour to active-low motor-driver logic</li>
+        <li>Moving from fixed-threshold rules to an averaging control law for smoother speed changes</li>
+      </ul>
+
+      <h2>How it turned out</h2>
+      <p>An end-to-end working prototype, tested with a real dog. It reliably detected ball returns, adapted launch speed from session to session, and logged and visualised real play data on the dashboard, with sessions running to 100+&nbsp;m of throws.</p>
+    </div>
+
+    <div class="prose" data-reveal>
+      <h2>The dashboard</h2>
+      <p>Every session streams into a web dashboard. <a href="https://github.com/Risha2028/nala-dashboard" target="_blank" rel="noopener">See the code on GitHub</a>.</p>
+    </div>
+
+    <div class="detail__media" data-reveal>
+      <div class="shot-row" style="margin-top:0">
+      <figure class="shot">
+        <img src="dog-ball-thrower-dashboard1.png" alt="Dashboard home screen with a greeting, weekly totals for sessions, efficiency, distance and time, and a fitness-over-time line chart." loading="lazy">
+        <figcaption>Weekly overview</figcaption>
+      </figure>
+      <figure class="shot">
+        <img src="dog-ball-thrower-%20dashboard2.png" alt="Dashboard session detail with tiles for total throws, session time, distance and efficiency, plus a throw-by-throw chart." loading="lazy">
+        <figcaption>Session detail</figcaption>
+      </figure>
+      <figure class="shot">
+        <img src="dog-ball-thrower-dashboard3.png" alt="Dashboard past-sessions list, each row showing date, throw count, total distance and a mood tag." loading="lazy">
+        <figcaption>Session history</figcaption>
+      </figure>
+      </div>
+    </div>
+
+    <div class="detail__meta">
+      <div>
+        <h3>Tools</h3>
+        <ul class="pills">
+          <li class="pill">ESP32</li><li class="pill">MicroPython</li><li class="pill">RCWL-1601 ultrasonic sensing</li><li class="pill">PWM motor control</li><li class="pill">BJT + MOSFET driver</li><li class="pill">MQTT</li><li class="pill">Supabase</li><li class="pill">Next.js</li><li class="pill">CAD / tolerancing</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Team</h3>
+        <p>A team project with Mark Huo, Minnoli Raghavan, and Omer Uslu.</p>
+        <p style="margin-top:.8rem"><a href="https://github.com/Risha2028/nala-dashboard" target="_blank" rel="noopener">Dashboard code on GitHub</a></p>
+      </div>
+    </div>
+
+    <nav class="pagenav" aria-label="Projects">
+      <a class="pagenav__prev" href="index.html#work">All projects</a>
+      <a class="pagenav__next" href="grip-gadget.html">Next: <span class="mark" style="--accent:var(--blossom)">Grip Gadget</span></a>
+    </nav>
+  </div>
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <span>Risha Suvarna &middot; UC Berkeley Mechanical Engineering</span>
+    <span>Built 2026</span>
+  </div>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>

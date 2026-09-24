@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Risha Suvarna · Personal Portfolio</title>
+<meta name="description" content="Personal portfolio of Risha Suvarna, a Mechanical Engineering student at UC Berkeley working in robotics, wearables, and human-centered design. Assistive devices, mechatronics, and field-tested hardware.">
+<meta name="theme-color" content="#2A1810">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='9' fill='%232A1810'/%3E%3Cpath d='M6 21c6 0 4-11 10-11s4 11 10 11' fill='none' stroke='%23EA8913' stroke-width='3' stroke-linecap='round'/%3E%3Ccircle cx='16' cy='10' r='2.4' fill='%23FDABA5'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a class="skip" href="#work">Skip to the work</a>
+
+<header class="topbar">
+  <div class="wrap">
+    <a class="brand" href="index.html"><img class="brand__avatar" src="headshot%20risha.jpeg" alt="" width="34" height="34"> Risha Suvarna</a>
+    <nav class="nav" aria-label="Primary">
+      <a href="#work">Work</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero" aria-labelledby="hero-h">
+    <div class="wrap">
+      <p class="hero__eyebrow">Personal portfolio</p>
+      <h1 id="hero-h" class="hero__name">Risha Suvarna</h1>
+      <p class="hero__degree">Mechanical Engineering</p>
+      <div class="hero__row">
+        <p class="hero__lede">Hi! I&rsquo;m Risha, a Mechanical Engineering student at UC&nbsp;Berkeley passionate about robotics, wearables, and human-centered design. I enjoy building products that bridge engineering and thoughtful design to solve problems for people.</p>
+        <figure class="hero__portrait">
+          <img src="headshot%20risha.jpeg" alt="Risha Suvarna" width="320" height="400">
+        </figure>
+      </div>
+      <ul class="hero__meta" aria-label="Skills">
+        <li>Robotics &amp; mechatronics</li>
+        <li>Human-centered design</li>
+        <li>CAD &amp; prototyping</li>
+      </ul>
+      <div class="hero__contact" id="contact">
+        <div class="contact__links">
+          <a class="btn" href="mailto:rishasuvarna@berkeley.edu">Email me</a>
+          <a class="btn btn--ghost" href="https://www.linkedin.com/in/risha-suvarna" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
+        <p class="hero__contact-text">
+          <a href="mailto:rishasuvarna@berkeley.edu">rishasuvarna@berkeley.edu</a>
+          <span aria-hidden="true">&middot;</span>
+          <a href="https://www.linkedin.com/in/risha-suvarna" target="_blank" rel="noopener">linkedin.com/in/risha-suvarna</a>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--work" id="work" aria-labelledby="work-h">
+    <div class="wrap">
+      <h2 id="work-h" class="section-title work-title" data-reveal>Selected work</h2>
+    </div>
+
+    <ul class="grid">
+        <li class="featured-cell" data-accent="terracotta" data-reveal>
+          <a class="card card--featured" href="ball-thrower.html">
+            <span class="card__img">
+              <img src="dog-ball-thrower1.png" alt="Red 3D-printed ball launcher prototype with exposed wiring, a tennis ball loaded, next to a laptop showing the session dashboard." loading="lazy">
+            </span>
+            <span class="card__body">
+              <h3>Autonomous Dog Ball Thrower</h3>
+              <span class="card__result">100+&nbsp;m of adaptive throws per session. The launcher reads how tired the dog is, adjusts each throw, and logs the session to a live dashboard.</span>
+              <span class="card__more">See the project</span>
+            </span>
+          </a>
+        </li>
+
+        <li data-accent="moss" data-reveal>
+          <a class="card" href="grip-gadget.html">
+            <span class="card__img">
+              <img src="newgrip2.png" alt="CAD render of the Grip Gadget: a black telescoping arm with a gear-driven claw at one end and a forearm cuff at the other." style="object-position:12% center" loading="lazy">
+            </span>
+            <span class="card__body">
+              <h3>Grip Gadget</h3>
+              <span class="card__result">A 2-DOF forearm-mounted grip-assist wearable that reaches 30&Prime; and grips a trash bag with no finger movement. Co-designed with Tony, a UC&nbsp;Berkeley facilities worker, and cut 40% in weight.</span>
+              <span class="card__more">See the project</span>
+            </span>
+          </a>
+        </li>
+
+        <li data-accent="skyblue" data-reveal>
+          <a class="card" href="sail-drone.html">
+            <span class="card__img">
+              <img src="TAFLab%20Boat.jpeg" alt="A yellow prototype sail drone floating in San Francisco Bay, viewed from a dock, with the San Francisco skyline and a windsurfer in the background." loading="lazy" style="object-position:center 15%">
+            </span>
+            <span class="card__body">
+              <h3>Autonomous Sail Drone</h3>
+              <span class="card__result">Built and assembled from scratch, then improved through CAD iterations: 25% lighter, rebuilt for solar, and validated at the marina sailing in all 8 directions, upwind included.</span>
+              <span class="card__more">See the project</span>
+            </span>
+          </a>
+        </li>
+
+        <li data-accent="blossom" data-reveal>
+          <a class="card" href="canine-prosthesis.html">
+            <span class="card__img">
+              <img src="dog-prosthetic1.png" alt="3D scan render of a curved prosthetic cuff with a honeycomb cell surface texture." loading="lazy">
+            </span>
+            <span class="card__body">
+              <h3>Canine Thoracic Limb Prosthesis</h3>
+              <span class="card__result">A fitted prosthetic leg for Ollie, a senior dog. Reshaped through four fittings on the dog himself, guided by his owner at every step.</span>
+              <span class="card__more">See the project</span>
+            </span>
+          </a>
+        </li>
+
+        <li data-accent="sunshine" data-reveal>
+          <a class="card" href="enabletech.html">
+            <span class="card__img">
+              <img src="Website%20Banner.png" alt="EnableTech site banner: an illustrated landscape with a large 'EnableTech' wordmark, featuring figures using a cane, wheelchair, and walker." loading="lazy" style="object-position:left">
+            </span>
+            <span class="card__body">
+              <h3>EnableTech Website</h3>
+              <span class="card__result">An accessibility-first site built to WCAG&nbsp;2.1&nbsp;AA. Keyboard-operable, screen-reader friendly, and designed for everyone from the start.</span>
+              <span class="card__more">See the project</span>
+            </span>
+          </a>
+        </li>
+    </ul>
+  </section>
+
+  <section class="section" id="about" aria-labelledby="about-h">
+    <div class="wrap">
+      <h2 id="about-h" class="section-title" data-reveal>More about me</h2>
+      <p class="about__text" data-reveal>Outside of my passion for building and design, I enjoy playing volleyball and pickleball, painting, and spending time outdoors. I love exploring new places, whether that means finding a new hiking trail, trying different cuisines, or learning about different cultures. I spent a summer abroad in Sweden and am planning to spend another semester abroad in Singapore. I&rsquo;m always excited to learn from new experiences and explore different perspectives from around the world.</p>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <span>Risha Suvarna &middot; UC Berkeley Mechanical Engineering</span>
+    <span>Built 2026</span>
+  </div>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>

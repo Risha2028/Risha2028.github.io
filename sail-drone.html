@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Autonomous Sail Drone · Risha Suvarna</title>
+<meta name="description" content="Undergraduate research building a solar, wind and wave-powered autonomous sailboat drone prototype for long-duration ocean monitoring.">
+<meta name="theme-color" content="#2A1810">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='9' fill='%232A1810'/%3E%3Cpath d='M6 21c6 0 4-11 10-11s4 11 10 11' fill='none' stroke='%23EA8913' stroke-width='3' stroke-linecap='round'/%3E%3Ccircle cx='16' cy='10' r='2.4' fill='%23FDABA5'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body data-accent="skyblue">
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="topbar">
+  <div class="wrap">
+    <a class="brand" href="index.html"><img class="brand__avatar" src="headshot%20risha.jpeg" alt="" width="34" height="34"> Risha Suvarna</a>
+    <nav class="nav" aria-label="Primary">
+      <a href="index.html#work">Work</a>
+      <a href="index.html#about">About</a>
+      <a href="index.html#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main class="detail" id="main" aria-labelledby="d-title">
+  <div class="wrap">
+    <a class="back" href="index.html#work">All projects</a>
+
+    <p class="detail__eyebrow">Undergraduate Researcher &middot; Jun 2026 &ndash; Aug 2026</p>
+    <h1 class="detail__title" id="d-title">Autonomous Sail <span class="mark mark--tall">Drone</span></h1>
+    <p class="detail__result">Built and assembled a full autonomous sailboat prototype from scratch, and improved it through CAD iterations. Cut boat mass 25% and sailed autonomously in all 8 directions, including upwind.</p>
+
+    <div class="detail__media" data-reveal>
+      <figure class="shot shot--bleed">
+        <img src="TAFLab%20Boat.jpeg" alt="A yellow prototype sail drone floating in San Francisco Bay, viewed from a dock, with the San Francisco skyline and a windsurfer in the background." loading="lazy">
+        <figcaption>The boat on the bay during field testing at the marina</figcaption>
+      </figure>
+      <div class="shot-duo">
+        <figure class="shot">
+          <img src="tafcad.png" alt="CAD assembly of the sail drone: a tall segmented yellow sail above a black cylindrical hull, with a dark keel plate and a white outrigger float below and a small yellow rudder blade at the stern." loading="lazy">
+          <figcaption>CAD of the boat: segmented sail, hull, keel, and rudder</figcaption>
+        </figure>
+        <figure class="shot">
+          <img src="tafcad2.png" alt="Exploded CAD view of the sail drone, separating the sail segments, hull tube, mounting brackets, electronics trays, end caps, keel plate, rudder, and float." loading="lazy">
+          <figcaption>Exploded view showing how the parts assemble</figcaption>
+        </figure>
+      </div>
+    </div>
+
+    <div class="prose" data-reveal>
+      <h2>The project</h2>
+      <p>An autonomous sailboat drone that combines sail propulsion, pendulum-based wave energy converters, and deck-mounted solar to stay powered at sea indefinitely, carrying water-temperature and dissolved-oxygen sensors. As an undergraduate researcher I built and assembled the full prototype from scratch, from machined lathe and mill parts and 3D-printed parts. I did not model the boat from scratch. I designed CAD iterations over the summer to improve it, taking those changes through fabrication and assembly. Along the way I owned two problems: why the boat couldn&rsquo;t sail upwind, and how to run it on solar.</p>
+
+      <h2>Root-cause: the upwind problem</h2>
+      <p>I ran systematic tests on a pentagonal course covering different points of sail and found a consistent pattern: the boat would turn to point upwind but never actually make ground that way, which points to insufficient keel moment. To fix it, I reduced the boat&rsquo;s overall weight by 25% and reengineered and lengthened the hull so it could sail autonomously in all 8 directions.</p>
+
+      <h2>Mechanical redesign</h2>
+      <ul>
+        <li>Rudder shaft kept snapping under load in aluminum, so I switched it to steel for far more strength</li>
+        <li>Redesigned the guide tube for the sail shaft, which was difficult to insert during assembly (design for assembly)</li>
+        <li>Redesigned components that weren&rsquo;t reachable with a screwdriver during maintenance</li>
+        <li>Added a sail plate behind the rudder for control drag, and wings on the keel for turn stability</li>
+      </ul>
+
+      <h2>Power system: going solar</h2>
+      <p>I re-engineered the power budget from scratch: a baseline 12&nbsp;V / 10&nbsp;Ah battery charged through a 45&nbsp;W panel and MPPT controller, then an upgrade to a 30&nbsp;W, 21.2%-efficient panel with a boost converter and MPPT controller feeding a 36&nbsp;V battery system for full-day autonomous operation. I resized the PCB in KiCad and hand-soldered it, offset the added hardware weight with more buoyancy, integrated reflective material, sealed the enclosure to IP68 for ocean deployment, and built power monitoring into the circuit with data sent over MQTT to a phone app. Paired with propeller-assist mode, the panel can generate roughly 180&nbsp;Wh per six-hour run.</p>
+
+      <h2>How it turned out</h2>
+      <p>Back at the marina, we sent the boat waypoints from a ground station and confirmed the sailing fixes by having it sail autonomously in all 8 directions, including upwind.</p>
+    </div>
+
+    <div class="detail__meta">
+      <div>
+        <h3>Tools</h3>
+        <ul class="pills">
+          <li class="pill">Lathe &amp; mill machining</li><li class="pill">3D printing</li><li class="pill">KiCad PCB resizing</li><li class="pill">Hand soldering</li><li class="pill">Root-cause testing</li><li class="pill">MPPT / voltage regulation</li><li class="pill">MQTT telemetry</li><li class="pill">Marine field testing</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Role</h3>
+        <p>Undergraduate Researcher, Jun 2026 &ndash; Aug 2026. Built and assembled the prototype from scratch and improved it with CAD iterations, across mechanical fabrication, power electronics, and field testing.</p>
+      </div>
+    </div>
+
+    <nav class="pagenav" aria-label="Projects">
+      <a class="pagenav__prev" href="grip-gadget.html">Grip Gadget</a>
+      <a class="pagenav__next" href="canine-prosthesis.html">Next: <span class="mark" style="--accent:var(--blossom)">Canine Prosthesis</span></a>
+    </nav>
+  </div>
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <span>Risha Suvarna &middot; UC Berkeley Mechanical Engineering</span>
+    <span>Built 2026</span>
+  </div>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Canine Thoracic Limb Prosthesis · Risha Suvarna</title>
+<meta name="description" content="A custom 3D-printed prosthetic leg for a senior dog, designed around direct owner interviews and hands-on fitting. Three-person team project.">
+<meta name="theme-color" content="#2A1810">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='9' fill='%232A1810'/%3E%3Cpath d='M6 21c6 0 4-11 10-11s4 11 10 11' fill='none' stroke='%23EA8913' stroke-width='3' stroke-linecap='round'/%3E%3Ccircle cx='16' cy='10' r='2.4' fill='%23FDABA5'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body data-accent="blossom">
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="topbar">
+  <div class="wrap">
+    <a class="brand" href="index.html"><img class="brand__avatar" src="headshot%20risha.jpeg" alt="" width="34" height="34"> Risha Suvarna</a>
+    <nav class="nav" aria-label="Primary">
+      <a href="index.html#work">Work</a>
+      <a href="index.html#about">About</a>
+      <a href="index.html#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main class="detail" id="main" aria-labelledby="d-title">
+  <div class="wrap">
+    <a class="back" href="index.html#work">All projects</a>
+
+    <p class="detail__eyebrow">BioPrinting @ Berkeley &middot; Design Engineer &middot; Jan 2026 &ndash; Jun 2026</p>
+    <h1 class="detail__title" id="d-title">Canine Thoracic Limb <span class="mark mark--tall">Prosthesis</span></h1>
+    <p class="detail__result">A fitted prototype, validated on Ollie and reshaped through four owner-driven fitting changes.</p>
+
+    <div class="detail__media detail__media--pair" data-reveal>
+      <figure class="shot">
+        <img src="dog-prosthetic1.png" alt="3D scan render of a curved prosthetic cuff or socket with a honeycomb cell surface texture, open at one end to wrap the body." loading="lazy">
+        <figcaption>Scan-driven cuff, with a honeycomb wall for weight and flex</figcaption>
+      </figure>
+      <figure class="shot">
+        <img src="dog-prosthetic2.png" alt="CAD render of the prosthetic leg: a hollow cylindrical shaft rising from a rounded foot base covered in a grid of round grip studs." loading="lazy">
+        <figcaption>Hollow structural core and studded foot base</figcaption>
+      </figure>
+    </div>
+
+    <div class="prose" data-reveal>
+      <h2>The problem</h2>
+      <p>Most prosthetic solutions aren&rsquo;t built around the specific animal wearing them. We designed a custom leg for Ollie, a 10-year-old, 12&nbsp;lb dog who lost his entire right front limb, including the scapula, to a mast cell tumor four years earlier. A small, senior dog with an old full-limb amputation has very different needs from a typical prosthetic candidate.</p>
+
+      <h2>Starting from a conversation</h2>
+      <p>Before any CAD, we interviewed Ollie&rsquo;s owner about his age, weight, amputation type, and years since surgery. That surfaced what a generic design would miss: after nearly half his life on three legs, comfort and gradual adaptation mattered as much as raw function. Three goals came straight out of that talk:</p>
+      <ul>
+        <li><strong>Lightweight.</strong> Under about 10% of body weight (~1&nbsp;lb) so it wouldn&rsquo;t hinder him.</li>
+        <li><strong>Stable.</strong> A wide chest contact area to make up for the missing scapula.</li>
+        <li><strong>Supportive.</strong> Taking load off his remaining front limb, which already carries roughly 60% of his weight.</li>
+      </ul>
+
+      <h2>Design &amp; materials</h2>
+      <p>I designed the leg in SolidWorks and ran FEA to find stress concentrations under load. The materials came out as a hollow carbon fiber and PVC core for a light, strong structure; a flexible TPU foot with a 20-30% honeycomb infill for grip, shock absorption, and a natural gait bounce; a TPU-and-Velcro harness sized to wrap a large area of the body since there was no residual limb to anchor to; and an EVA foam lining for comfort. We prototyped in PETG to conserve TPU stock, with the final version planned in full TPU. Mid-project presentation check-ins were where we pressure-tested those material choices.</p>
+
+      <h2>Iterating through a fitting</h2>
+      <p>We brought a prototype in for a first fitting directly on Ollie, and his and his owner&rsquo;s real-time reactions drove the next pass:</p>
+      <ul>
+        <li>Reduced gaps in the harness for a more comfortable fit</li>
+        <li>Reshaped the leg opening to be smoother and more circular to prevent chafing</li>
+        <li>Resized the attachment point and cut the core tube to the right height (~14.5&nbsp;cm)</li>
+        <li>Widened the Velcro holes and the foot base for stability</li>
+      </ul>
+
+      <h2>How it turned out</h2>
+      <p>A fitted, functional prototype validated on Ollie himself and refined through direct owner input at every stage (needs assessment, material selection, and fitting) rather than assumptions.</p>
+    </div>
+
+    <div class="detail__meta">
+      <div>
+        <h3>Tools</h3>
+        <ul class="pills">
+          <li class="pill">SolidWorks</li><li class="pill">FEA</li><li class="pill">3D printing (TPU / PETG)</li><li class="pill">Carbon fiber / PVC / TPU</li><li class="pill">Biomechanical fit</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Team</h3>
+        <p>A three-person project. Needs assessment, materials, and fitting were all driven by direct input from Ollie&rsquo;s owner.</p>
+      </div>
+    </div>
+
+    <nav class="pagenav" aria-label="Projects">
+      <a class="pagenav__prev" href="sail-drone.html">Autonomous Sail Drone</a>
+      <a class="pagenav__next" href="enabletech.html">Next: <span class="mark" style="--accent:var(--blossom)">EnableTech Website</span></a>
+    </nav>
+  </div>
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <span>Risha Suvarna &middot; UC Berkeley Mechanical Engineering</span>
+    <span>Built 2026</span>
+  </div>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>

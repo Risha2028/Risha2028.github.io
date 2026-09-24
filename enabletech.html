@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>EnableTech Website · Risha Suvarna</title>
+<meta name="description" content="An accessibility-first website build, designed and tested to WCAG 2.1 AA.">
+<meta name="theme-color" content="#2A1810">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='9' fill='%232A1810'/%3E%3Cpath d='M6 21c6 0 4-11 10-11s4 11 10 11' fill='none' stroke='%23EA8913' stroke-width='3' stroke-linecap='round'/%3E%3Ccircle cx='16' cy='10' r='2.4' fill='%23FDABA5'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body data-accent="sunshine">
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="topbar">
+  <div class="wrap">
+    <a class="brand" href="index.html"><img class="brand__avatar" src="headshot%20risha.jpeg" alt="" width="34" height="34"> Risha Suvarna</a>
+    <nav class="nav" aria-label="Primary">
+      <a href="index.html#work">Work</a>
+      <a href="index.html#about">About</a>
+      <a href="index.html#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main class="detail" id="main" aria-labelledby="d-title">
+  <div class="wrap">
+    <a class="back" href="index.html#work">All projects</a>
+
+    <p class="detail__eyebrow">Web &amp; accessibility</p>
+    <h1 class="detail__title" id="d-title">EnableTech <span class="mark mark--tall">Website</span></h1>
+    <p class="detail__result">A WCAG 2.1 AA conformant site, built accessibility-first for a student club.</p>
+
+<div class="detail__media" data-reveal>
+      <div class="shot-split">
+        <figure class="shot">
+          <img src="Website%20Screenshot.png" alt="EnableTech homepage: a hero section reading 'Engineering access, together' over a photo of hands working on a wheelchair wheel, with See Our Projects and Join Us buttons, followed by a mission statement and a three-point Why We're Different section." loading="lazy">
+          <figcaption>Homepage</figcaption>
+        </figure>
+        <div class="shot-stack">
+          <figure class="shot">
+            <img src="Website%20About%20Page.png" alt="EnableTech's Our Current Projects section, showing team photos and cards for Gait Walker, Grip Gadget, an assistive alert system, and Toy Modification." loading="lazy">
+            <figcaption>About page &middot; current projects</figcaption>
+          </figure>
+          <figure class="shot">
+            <img src="Website%20Banner.png" alt="EnableTech site banner: an illustrated landscape with a large 'EnableTech' wordmark, featuring figures using a cane, wheelchair, and walker, above a navigation bar." loading="lazy" style="object-position:left">
+            <figcaption>Site banner</figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+
+    <div class="prose" data-reveal>
+      <h2>The approach</h2>
+      <p>Build EnableTech&rsquo;s web presence accessibility-first: semantic structure, a logical heading order, and landmark regions so assistive technology can move through the page predictably; full keyboard operability with visible focus; respected reduced-motion preferences; and ARIA only where native semantics fall short.</p>
+
+      <h2>How it turned out</h2>
+      <p>A site checked against WCAG 2.1 AA for colour contrast, alternative text, and focus management.</p>
+    </div>
+
+    <div class="detail__meta">
+      <div>
+        <h3>Tools</h3>
+        <ul class="pills">
+          <li class="pill">HTML</li><li class="pill">CSS</li><li class="pill">WCAG 2.1 AA</li><li class="pill">Accessibility testing</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Notes</h3>
+        <p><a href="https://github.com/Risha2028/enabletech-website" target="_blank" rel="noopener">View the code on GitHub</a></p>
+      </div>
+    </div>
+
+    <nav class="pagenav" aria-label="Projects">
+      <a class="pagenav__prev" href="canine-prosthesis.html">Canine Prosthesis</a>
+      <a class="pagenav__next" href="index.html#work">All projects</a>
+    </nav>
+  </div>
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <span>Risha Suvarna &middot; UC Berkeley Mechanical Engineering</span>
+    <span>Built 2026</span>
+  </div>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
