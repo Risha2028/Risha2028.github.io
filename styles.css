@@ -229,11 +229,7 @@ a:hover{text-decoration-color:var(--blossom)}
 [data-accent="sunshine"]  {--accent:var(--sunshine);  --on-accent:var(--ink)}
 
 /* ---------- about (personal note) ---------- */
-#about{
-  background:linear-gradient(rgba(42,24,16,.7),rgba(42,24,16,.7)),url("meadow-flowers.jpg") center/cover no-repeat;
-}
-#about .section-title,.about__text{text-shadow:0 1px 10px rgba(42,24,16,.65)}
-.about__text{max-width:54ch;font-size:var(--step-1);color:var(--ink-light);line-height:1.6}
+.about__text{max-width:54ch;font-size:var(--step-1);color:var(--ink-soft-light);line-height:1.6}
 
 /* ---------- contact ---------- */
 .hero__contact{margin-top:1.2rem}
@@ -364,7 +360,6 @@ body.js [data-reveal].in{opacity:1;transform:none}
   .brand,.nav a,.hero__eyebrow,.hero__name,.hero__degree,.section-title,
   .detail__eyebrow,.detail__title,.detail__result,.back,.pagenav a,
   .prose,.prose h2,.detail__meta h3,.btn--ghost{color:var(--ink)}
-  #about{background:none}
   .about__text,.hero__lede,.hero__meta,.hero__contact-text,.foot{color:var(--ink-soft)}
   .hero__contact-text a{color:var(--link)}
   .prose a,.detail__meta a{color:var(--link)}
